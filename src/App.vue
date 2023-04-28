@@ -1,25 +1,68 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+
+  <Header class="header"/>
+  <div class="down">
+    <sitebar class="sitebar"/>
+
+    <div class="mainDown">
+      <main-up class="mainUp"/>
+      <div class="mainDownLeftGroup">
+        <MainTopLeft class="mainTopLeft"/>
+
+          <MainDownLeft class="mainDownLeft"/>
+<!--          <MainRight class="mainRight"/>-->
+      </div>
+
+    </div>
+
+  </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Header from "@/components/header.vue";
+import Sitebar from "@/components/sitebar.vue";
+import MainUp from "@/components/mainUp.vue"
+import MainTopLeft from "@/components/MainTopLeft.vue";
+import MainDownLeft from "@/components/MainDownLeft.vue"
+import MainRight from "@/components/MainRight.vue"
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    Header,
+    Sitebar,
+    MainUp,
+    MainTopLeft,
+    MainDownLeft,
+    MainRight
+
+
   }
 }
 </script>
 
 <style lang="stylus">
+.header
+  width 100%
+  display flex
+  flex-direction column
+
 #app
-  font-family Avenir, Helvetica, Arial, sans-serif
-  -webkit-font-smoothing antialiased
-  -moz-osx-font-smoothing grayscale
-  text-align center
-  color #2c3e50
-  margin-top 60px
+
+  flex-direction column
+
+.down
+  display flex
+  flex-direction row
+
+.mainDown
+  flex-direction column
+  width 100%
+
+.mainDownGroup
+  display flex
+  flex-direction row
+
+.mainDownLeftGroup
+  width 70%
 </style>
