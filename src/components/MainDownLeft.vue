@@ -255,9 +255,8 @@ $border-color = #eef0f5
 
 .container-mainDownLeft
   width 100%
-  margin-left 80px
+
   margin-top 5px
-  height 90px
 
 .line2
   border-top solid 3px $border-color

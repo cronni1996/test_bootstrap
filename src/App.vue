@@ -6,13 +6,13 @@
 
     <div class="mainDown">
       <main-up class="mainUp"/>
+      <div class="main21frr">
       <div class="mainDownLeftGroup">
         <MainTopLeft class="mainTopLeft"/>
-
-          <MainDownLeft class="mainDownLeft"/>
-<!--          <MainRight class="mainRight"/>-->
+        <MainDownLeft class="mainDownLeft"/>
       </div>
-
+        <MainRight/>
+      </div>
     </div>
 
   </div>
@@ -47,9 +47,15 @@ export default {
   display flex
   flex-direction column
 
+
+
 #app
 
   flex-direction column
+
+.main21frr
+  display flex
+  flex-direction row
 
 .down
   display flex
@@ -64,5 +70,8 @@ export default {
   flex-direction row
 
 .mainDownLeftGroup
-  width 70%
+  display flex
+  flex-direction column
+  width 170%
+  margin-left 80px
 </style>

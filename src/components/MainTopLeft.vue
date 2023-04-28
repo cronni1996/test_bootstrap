@@ -89,7 +89,6 @@ $color-black = black
   display flex
   width 100%
   flex-grow 1
-  margin-left 80px
   margin-top 5px
   h3
     font-family Roboto, Helvetica Neue Light, Helvetica Neue, Helvetica, Arial, Lucida Grande, sans-serif

@@ -1,5 +1,5 @@
 <template>
-<div class="container-mainRihgt">
+<div class="container-mainRight">
 
 </div>
 </template>
@@ -18,9 +18,9 @@ $icons-color = #b7c1d7
 $background-block = #fdfdfd
 $color-black = black
 
-.container-mainRihgt
+.container-mainRight
   background-color bisque
-  width 300px
-  height 1400px
-  float right
+  width 100%
+  height auto
+
 </style>
