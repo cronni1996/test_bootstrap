@@ -7,10 +7,10 @@
     <div class="mainDown">
       <main-up class="mainUp"/>
       <div class="main21frr">
-      <div class="mainDownLeftGroup">
-        <MainTopLeft class="mainTopLeft"/>
-        <MainDownLeft class="mainDownLeft"/>
-      </div>
+        <div class="mainDownLeftGroup">
+          <MainTopLeft class="mainTopLeft"/>
+          <MainDownLeft class="mainDownLeft"/>
+        </div>
         <MainRight/>
       </div>
     </div>
@@ -48,7 +48,6 @@ export default {
   flex-direction column
 
 
-
 #app
 
   flex-direction column
@@ -72,6 +71,6 @@ export default {
 .mainDownLeftGroup
   display flex
   flex-direction column
-  width 170%
+  width 240%
   margin-left 80px
 </style>

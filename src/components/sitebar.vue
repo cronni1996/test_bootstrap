@@ -163,13 +163,15 @@
         </button>
       </div>
       <h3>Add New Project</h3>
-      <h4>Our Use <button type="button" v-on:click="zaeb" class="btn-link-add btn btn-light">invite link</button></h4>
+      <h4>Our Use
+        <button type="button" v-on:click="zaeb" class="btn-link-add btn btn-light">invite link</button>
+      </h4>
     </div>
   </div>
 </template>
 
 <script>
-function zaeb(){
+function zaeb() {
   console.log("zarbal")
 }
 </script>
@@ -207,11 +209,13 @@ $text-navi {
   margin-left 10px
   flex-direction row
   display: flex;
+
   h1
     font-size 20px
     font-family Roboto
     font-weight 900
     $text-color
+
   h2
     font-size 17px
     font-family Roboto
@@ -220,6 +224,7 @@ $text-navi {
 
 .user-avatar
   margin-right 15px
+
 .user-icons
   font-size 30px
   margin-left 40px
@@ -244,6 +249,7 @@ $text-navi {
 
 .btn-group-vertical
   width 250px
+
 .dashboard
   display: flex
   justify-content center
@@ -251,8 +257,10 @@ $text-navi {
 
 .bi-dashboard
   font-size 20px
+
 .checked
   margin-left 50px
+
 .sidebar-navi
   .bi
     font-size 20px
@@ -275,6 +283,7 @@ $text-navi {
 
 .calendar-bi
   color $blue-color
+
 .add-services
   margin-top 30px
   margin-left 10px
@@ -289,6 +298,7 @@ $text-navi {
   display flex
   margin-top 20px
   margin-left 10px
+
   h2
     color $text-color
     margin-top 20px
@@ -312,16 +322,17 @@ $text-navi {
 .group
   margin-top 30px
   margin-left 25px
+
   button
     margin-top 20px
     border none
     background-color $background-block
     width 200px
     color $text-color
+
   img
     margin-top 20px
     width 30px
-
 
 
 .add-project
@@ -335,12 +346,14 @@ $text-navi {
   flex-direction column
   justify-content center
   align-items center
+
   button
     background-color $blue-color
     border-radius 30px
 
   .bi
     font-size 80px
+
   .btn-link-add
     background-color $background-block
     padding-left -30px
@@ -356,6 +369,7 @@ $text-navi {
     font-family Roboto, Helvetica Neue Light, Helvetica Neue, Helvetica, Arial, Lucida Grande, sans-serif
     font-weight 900
     font-size 25px
+
   h4
     font-family Roboto, Helvetica Neue Light, Helvetica Neue, Helvetica, Arial, Lucida Grande, sans-serif
     font-weight 600

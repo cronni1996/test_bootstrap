@@ -20,8 +20,8 @@
             <h4 class="data">8 hours ago</h4>
             <div class="commits">
               <i class="bi bi-clock-history"></i>
-              <h4 class="int-commits">39,433</h4>
-              <h4 class="string-commits">commits</h4>
+              <h4 class="int-commits"> 39,433 </h4>
+              <h4 class="string-commits"> commits</h4>
             </div>
           </div>
         </div>
@@ -257,7 +257,8 @@ $border-color = #eef0f5
   width 100%
 
   margin-top 5px
-
+.int-commits
+  margin-right 5px
 .line2
   border-top solid 3px $border-color
   width 100%
