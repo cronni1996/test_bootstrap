@@ -171,4 +171,31 @@ $background-color = #f6f7f8
 .mr-2
   color $blue-color
   background-color $background-add-code
+
+
+@media  (max-width: 1000px)
+  .nav-link
+    font-size 12px
+    margin-left -5px
+  .btn-add-code
+    font-size 12px
+  .dropdown-button
+    font-size 14px
+    margin-right 20px
+  .navbar-logo
+    height 30px
+    width 30px
+  .svg-icons
+    display flex
+    flex-direction column
+  .p-badge
+    right 10px
+    font-size 10px
+  .d-flex
+    width 130px
+  #data-v-29e8c3c6
+    background-color #b6bfd5
+
+
+
 </style>

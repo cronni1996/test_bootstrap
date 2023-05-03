@@ -42,6 +42,7 @@ export default {
 </script>
 
 <style lang="stylus">
+$background-color = #f6f7f8
 .header
   width 100%
   display flex
@@ -53,8 +54,11 @@ export default {
   flex-direction column
 
 .main21frr
+  margin-left 5px
   display flex
   flex-direction row
+  background-color $background-color
+
 
 .down
   display flex
@@ -69,8 +73,13 @@ export default {
   flex-direction row
 
 .mainDownLeftGroup
+
   display flex
   flex-direction column
-  width 240%
-  margin-left 80px
+  width 100%
+  margin-left 10px
+
+@media (max-width: 992px)
+  .main21frr
+    flex-direction column
 </style>

@@ -184,4 +184,32 @@ a
   font-size 15px
   margin-right 15px
 
+@media (max-width: 991px)
+  .container-mainUp
+    width 770px
+  .breadcrumb-item
+    margin-top 10px
+    font-size 17px!important
+  .button-public
+    font-size 11px!important
+    margin-right 5px
+  .bi-journal-bookmark
+    margin-top 10px
+  .right-main1
+    font-size 12px !important
+    margin-left 5px !important
+  .right-main1-bi
+    font-size 12px !important
+  .badge-main1
+    font-size 8px !important
+  .main1, .main2
+    margin-left 20px
+  .main2
+    i
+      font-size 14px !important
+    button
+      font-size 12px !important
+
+
+
 </style>

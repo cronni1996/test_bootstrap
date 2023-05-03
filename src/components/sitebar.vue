@@ -7,7 +7,7 @@
                 style="font-size:17px; font-family: Roboto, Helvetica Neue Light, Helvetica Neue, Helvetica, Arial, Lucida Grande, sans-serif;font-weight:900;"/>
       </div>
       <div class="user">
-        <h2 class="GoodDay">Good Day</h2>
+        <h2 class="goodDay">Good Day</h2>
         <h1 class="user-name">Michail D.</h1>
       </div>
       <div class="user-icons">
@@ -20,7 +20,10 @@
         <div class="dashboard">
           <i class="bi-dashboard bi bi-columns-gap"></i>
           <button type="button" class="btn btn-light">Dashboard</button>
-          <InputSwitch class="checked" v-model="checked"/>
+          <div class="form-check form-switch">
+            <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+            <label class="form-check-label" for="flexSwitchCheckDefault"></label>
+          </div>
         </div>
         <div class="project">
           <i class="bi bi-folder"></i>
@@ -163,9 +166,11 @@
         </button>
       </div>
       <h3>Add New Project</h3>
-      <h4>Our Use
+      <div class="link-invite">
+      <h4>Our Use</h4>
         <button type="button" v-on:click="zaeb" class="btn-link-add btn btn-light">invite link</button>
-      </h4>
+
+    </div>
     </div>
   </div>
 </template>
@@ -198,7 +203,7 @@ $text-navi {
 
 .container-sitebar
   width 330px
-  height 1600px
+  height 100%
   background-color $background-color
   display flex
   flex-direction column
@@ -282,7 +287,7 @@ $text-navi {
   with 30px
 
 .calendar-bi
-  color $blue-color
+  color $blue-color !important
 
 .add-services
   margin-top 30px
@@ -319,6 +324,12 @@ $text-navi {
   height 40px
   border none
 
+
+.link-invite
+  display flex
+  flex-direction row
+  align-items center
+
 .group
   margin-top 30px
   margin-left 25px
@@ -346,6 +357,7 @@ $text-navi {
   flex-direction column
   justify-content center
   align-items center
+  margin-bottom 50px
 
   button
     background-color $blue-color
@@ -374,4 +386,63 @@ $text-navi {
     font-family Roboto, Helvetica Neue Light, Helvetica Neue, Helvetica, Arial, Lucida Grande, sans-serif
     font-weight 600
     font-size 19px
+    margin-top 7px
+    margin-right 7px
+
+
+@media (max-width 992px)
+  .container-sitebar
+    width 200px
+  .user-avatar
+    margin-left -15px
+  .goodDay
+    font-size 10px !important
+  .user-name
+   font-size 14px !important
+  .users
+   margin-top 10px
+  .user
+   margin-top 15px
+  Button
+    font-size 15px !important
+  .badge-calendar
+    font-size 14px !important
+    margin-left 12px
+  .form-check
+    margin-left 5px
+  .user-icons
+    display flex
+    flex-direction column
+    justify-content center
+    margin-left 15px
+  .svg-icons
+    display flex
+    flex-direction row !important
+    justify-content center
+  .add-services
+    width 170px !important
+    h2
+      font-size 15px
+    .btn-add-service
+      margin-left 5px
+      width 40px !important
+    img
+      height 14px
+      width 14px
+    .dropdown-toggle
+      width 110px
+      font-size 13px!important
+  .add-project
+      width 170px
+      h3
+        font-size 16px
+      h4
+        font-size 12px
+      .btn-link-add
+        font-size 12px
+        padding-left -30px
+      .bi-plus-circle
+        font-size 30px !important
+
+
 </style>

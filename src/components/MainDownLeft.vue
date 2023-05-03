@@ -255,8 +255,6 @@ $border-color = #eef0f5
 
 .container-mainDownLeft
   width 100%
-
-  margin-top 5px
 .int-commits
   margin-right 5px
 .line2
@@ -305,6 +303,7 @@ $border-color = #eef0f5
   flex-direction row
   align-items center
   height 70px
+
 
 
   .headerMainDownLeft
@@ -378,4 +377,28 @@ $border-color = #eef0f5
   border-radius 10px
   display flex
   flex-direction column
+
+@media (max-width: 992px)
+  .container-mainDownLeft
+    .btn-secondary
+      font-size 12px
+  h3
+    font-size 15px!important
+  .svg-branches
+    width 25px!important
+  .btn-goToFile
+    font-size 14px!important
+    width 90px
+  .btn-group
+    margin-left 5px!important
+    margin-right 10px
+  h4
+    font-size 12px!important
+  .name
+    margin-right -50px
+  .line
+    width 750px
+  .contributors
+    margin-bottom 20px
+
 </style>

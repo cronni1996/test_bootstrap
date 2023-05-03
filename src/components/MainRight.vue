@@ -290,4 +290,15 @@ h4
     display flex
     align-items center
     background-color none
+
+@media(max-width: 992px)
+  .container-mainRight
+
+  .content
+    display flex
+    flex-direction row
+    flex-wrap wrap
+    align-content center
+    justify-content center
+    align-items center
 </style>
