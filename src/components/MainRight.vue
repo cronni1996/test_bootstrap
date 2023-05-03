@@ -125,175 +125,141 @@ $color-kl = #ca7329
 .container-mainRight
   display flex
   flex-direction column
-  width 100%
+  width 450px
   height auto
-
 .three-line1
   display flex
   flex-direction row
-
 .three-line2
   display flex
   flex-direction row
-
 .three-line3
   display flex
   flex-direction row
-
 .badge3
   background-color $badge-color !important
   position relative
   right 10px
   bottom 23px
-
 h5
   font-family Roboto, Helvetica Neue Light, Helvetica Neue, Helvetica, Arial, Lucida Grande, sans-serif
   font-size 16px
   font-weight 600
   background-color $background-add-code
   padding 5px 15px 5px 15px
-
   color $blue-color
   margin-right 10px
   justify-content center
   display flex
   border-radius 30px
-
 .content
   font-family Roboto, Helvetica Neue Light, Helvetica Neue, Helvetica, Arial, Lucida Grande, sans-serif
   margin-left 40px
   margin-top 50px
-
   .text-h3
     font-weight 900
     color $text-color-black
-
 .icons
   border-bottom $text-color solid 2px
   margin 20px 50px 0 15px
   padding-bottom 20px
-
+  max-width 415px
 .text-h4
   margin-top 20px
   font-weight 900
   color $text-color-black
-
 .three
   margin-top 20px
-
+  max-width 415px
 .text-three
   font-family Roboto, Helvetica Neue Light, Helvetica Neue, Helvetica, Arial, Lucida Grande, sans-serif
   font-weight 600
   color $blue-color
-
 .bi-link
   margin-right 10px
-
 svg
   height 25px
   margin 0px -1px 0px -5px
-
 .bi
   font-size 18px
   color $text-color
-
 h4
   color $text-color
   font-size 18px
-
 .stars
   display flex
   flex-direction row
   align-items center
-
   .int-stars
     color $text-color-black
     margin 4px 10px 0 0
-
   .string-stars
     margin-top 10px
-
 .watching
   display flex
   flex-direction row
   align-items center
-
   .int-watching
     color $text-color-black
     margin 4px 10px 0 0
-
   .string-watching
     margin-top 10px
-
 .forks
   display flex
   flex-direction row
   align-items center
-
   .int-forks
     color $text-color-black
     margin 4px 10px 0 3px
-
   .string-forks
     margin-top 10px
-
-
+.text
+  max-width 415px
 .mr-2
   margin-top 20px
   margin-left 30px
-
 .mr-2-sd
   color $color-sd
-
 .mr-2-sg
   color $color-sg
-
 .mr-2-fd
   color $color-fd
-
 .mr-2-mh1
   color $color-mh1
-
 .mr-2-mh2
   color $color-mh2
-
 .mr-2-mh3
   color $color-mh3
-
 .mr-2-kl
   color $color-kl
-
 #pv_id_1_badge, #pv_id_2_badge
   margin-top 50px
   margin-right 10px
   background-color #fdc933
-
 #pv_id_3_badge, #pv_id_4_badge
   margin-top 50px
   margin-right 10px
   background-color #29ca39
-
+.contributors
+  max-width 415px
 .contributors-top
   display flex
   flex-direction row
   margin-top 20px
   margin-left 20px
-
   .text-contributors
     font-family Roboto, Helvetica Neue Light, Helvetica Neue, Helvetica, Arial, Lucida Grande, sans-serif
     font-size 30px
     font-weight 900
     color $text-color-black
     margin-right 20px
-
   .int-contributors
     display flex
     align-items center
     background-color none
 
-@media(max-width: 992px)
+@media (max-width: 992px)
   .container-mainRight
-
   .content
     display flex
     flex-direction row
@@ -301,4 +267,42 @@ h4
     align-content center
     justify-content center
     align-items center
+
+@media (max-width: 1200px)
+  .container-mainRight
+    width 218px
+  .three-line1, .three-line2, .three-line3
+    flex-wrap wrap
+  .p-avatar
+    width 2.5rem !important
+    height 2.5rem !important
+    .p-avatar-text
+      font-size 12px !important
+  .int-contributors
+    font-size 12px
+  .contributors
+    margin-bottom 20px
+  .content
+    margin-left 20px
+
+
+@media (max-width: 1400px)
+  .container-mainRight
+    width 218px
+  .three-line1, .three-line2, .three-line3
+    flex-wrap wrap
+  .p-avatar
+    width 3rem !important
+    height 3rem !important
+    .p-avatar-text
+      font-size 16px !important
+  .int-contributors
+    font-size 12px
+  .contributors
+    margin-bottom 20px
+  .text-contributors
+    font-size 14px !important
+  .content
+    margin-left 20px
+
 </style>

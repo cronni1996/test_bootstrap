@@ -85,26 +85,20 @@ $color-black = black
   height 138px
   flex-grow 1
   max-width: 100%
-
 .flex-dirrec
   display flex
   flex-direction column
   width 94%
-
 .badge-main1
   margin-left 10px
   display flex
   flex-direction row
-
 a
   text-decoration none
-
-
 .left
   display flex
   flex-grow 1
   heigt 100px
-
 .main1
   margin-left 80px
   margin-right 10px
@@ -113,10 +107,8 @@ a
   flex-direction row
   height 40px
   width 100%
-
 .btn
   text-decoration none
-
 .main2
   margin-left 85px
   margin-right 10px
@@ -126,65 +118,51 @@ a
   height 40px
   width 100%
   align-items center
-
   button
     display flex
     align-items center
-
   i
     font-size 20px
     margin-right 15px
-
   .bi-code-main2
     border-bottom: solid;
     border-radius: 0;
     color $blue-color
-
   .bi-code-main22
-
     color $blue-color
     margin-left -20px
-
   .badge-pull-request
     margin-left 10px
     background-color $background-block
     color $color-black
-
-
 .right-button
   display flex
   justify-content flex-end
-
-
 .breadcrumb-item
   margin-left 10px
   color $blue-color
   font-family Roboto, Helvetica Neue Light, Helvetica Neue, Helvetica, Arial, Lucida Grande, sans-serif
   font-size 30px
   text-decoration: none
-
 .bi
   font-size 30px
-
 .button-public
   margin-left 20px
   border-radius 20px
   font-size 15px
   margin-top 7px
   background-color $background-block
-
 .right-main1
   margin-left 20px
   display flex
   align-items center
   background-color $background-block
   border-radius 10px
-
 .right-main1-bi
   font-size 15px
   margin-right 15px
 
-@media (max-width: 991px)
+@media (max-width: 992px)
   .container-mainUp
     width 770px
   .breadcrumb-item
@@ -210,6 +188,57 @@ a
     button
       font-size 12px !important
 
+@media (max-width: 1200px)
+  .container-mainUp
+    width 975px
+  .breadcrumb-item
+    margin-top 10px
+    font-size 17px!important
+  .button-public
+    font-size 11px!important
+    margin-right 5px
+  .bi-journal-bookmark
+    margin-top 10px
+  .right-main1
+    font-size 12px !important
+    margin-left 5px !important
+  .right-main1-bi
+    font-size 12px !important
+  .badge-main1
+    font-size 8px !important
+  .main1, .main2
+    margin-left 20px
+  .main2
+    i
+      font-size 14px !important
+    button
+      font-size 12px !important
+
+@media (max-width: 1400px)
+  .container-mainUp
+    width 927px
+  .breadcrumb-item
+    margin-top 10px
+    font-size 19px!important
+  .button-public
+    font-size 14px!important
+    margin-right 5px
+  .bi-journal-bookmark
+    margin-top 10px
+  .right-main1
+    font-size 14px !important
+    margin-left 5px !important
+  .right-main1-bi
+    font-size 14px !important
+  .badge-main1
+    font-size 10px !important
+  .main1, .main2
+    margin-left 20px
+  .main2
+    i
+      font-size 16px !important
+    button
+      font-size 16px !important
 
 
 </style>

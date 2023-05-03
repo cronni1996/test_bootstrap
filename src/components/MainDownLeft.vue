@@ -160,7 +160,6 @@
 
           <div class="dataLine">
             <h4 class="text-dataLine">3 year ago</h4>
-
           </div>
         </div>
         <div class="line2">
@@ -171,10 +170,8 @@
           <div class="comment">
             <h4>test-treeshake: Add rollup-plugin-visualizer (#23657) </h4>
           </div>
-
           <div class="dataLine">
             <h4 class="text-dataLine">3 years ago</h4>
-
           </div>
         </div>
         <div class="line2">
@@ -227,13 +224,10 @@
           <div class="comment">
             <h4>npm audit fix </h4>
           </div>
-
           <div class="dataLine">
             <h4 class="text-dataLine">3 years ago</h4>
-
           </div>
         </div>
-
       </div>
     </div>
   </div>
@@ -265,37 +259,29 @@ $border-color = #eef0f5
   flex-direction row
   align-items center
   height 70px
-
   .name
     width 250px
     display flex
     align-items center
-
     .text-name
       color $blue-color
       margin-left 25px
-
     .bi-folder-fill
       margin-left 25px
       color $blue-color
-
     .bi-file-earmark
       margin-left 25px
-
   h4
     font-family Roboto, Helvetica Neue Light, Helvetica Neue, Helvetica, Arial, Lucida Grande, sans-serif
     color $text-color
     font-size 18px
     font-weight 700
-
   .comment
     display flex
     flex-grow 1
     margin-left 30px
-
   .dataLine
     margin-right 15px
-
 .line1
   width 100%
   flex-grow 1
@@ -303,74 +289,58 @@ $border-color = #eef0f5
   flex-direction row
   align-items center
   height 70px
-
-
-
   .headerMainDownLeft
     flex-grow 1
     display flex
     flex-direction row
     align-items center
-
   .text
     flex-grow 1
     display flex
     flex-direction row
-
+    max-width 415px
     h4
       color $text-color
       font-family Roboto, Helvetica Neue Light, Helvetica Neue, Helvetica, Arial, Lucida Grande, sans-serif
       font-weight 900
       font-size 18px
-
   .mr-2
     margin-left 20px
-
   .mrdoob
     margin-left 20px
-
   .nodeMaterials
     margin-left 20px
-
   .number
     margin-left 5px
-
   .int23064
     color $blue-color
-
   .right
     display flex
     flex-direction row
     float right
     color $blue-color
     align-items center
-
     .bi-check-lg
       display flex
       align-items center
       color green
       font-size 20px
-
     .bi-clock-history
       font-size 20px
-
     .data
       margin-left 15px
-
     .commits
       margin-left 15px
       display flex
       flex-direction row
       align-items center
       margin-right 15px
-
     h4
       display flex
       align-items center
       color $text-color
       font-size 18px
       margin-top 10px
-
 .line
   border 3px solid $border-color
   background-color $background-block
@@ -401,4 +371,28 @@ $border-color = #eef0f5
   .contributors
     margin-bottom 20px
 
+
+@media (max-width: 1200px)
+  .container-mainDownLeft
+    margin-left -50px
+    .btn-secondary
+      font-size 14px
+  h3
+    font-size 17px!important
+  .topLeftUp1
+    margin-left -50px
+  .svg-branches
+    width 25px!important
+  .btn-goToFile
+    font-size 16px!important
+    width 90px
+  .btn-group
+    margin-left 5px!important
+    margin-right 10px
+  h4
+    font-size 16px!important
+  .name
+    margin-right -50px
+  .line
+    width 750px
 </style>

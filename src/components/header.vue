@@ -96,31 +96,24 @@ $background-color = #f6f7f8
   width 100%
   background-color $background-color
   height 90px
-
 .navbar
   padding-top 0
-
 .nav-link
   margin-left 10px
   margin-right 10px
   font-family Roboto
   font-weight 600
-
 .navbar-collapse
   margin-left 10px
-
 .header
   justify-content center
   width 100%
-
 .d-flex
   position relative
   margin-right 20px
-
 .svg-icons
   position relative
   margin-right 20px
-
 .navbar-logo
   height 33px
   width 33px
@@ -129,28 +122,22 @@ $background-color = #f6f7f8
   color: $text-color;
   border: 9px $blue-color solid;
   border-radius: 100px;
-
 .bi-icons
   font-size 20px
   margin-right 10px
   font-family Roboto
   font-weight 400
   color $text-color
-
 .avatar-group
   position relative
-
-
 .badge
   background-color $badge-color
   position relative
   right 10px
   bottom 23px
-
 .user
   display flex
   flex-direction row
-
 .btn-add-code
   font-family Roboto
   font-weight 900
@@ -158,7 +145,6 @@ $background-color = #f6f7f8
   background-color $background-add-code
   color $blue-color
   border none
-
 .dropdown-button
   font-family Roboto
   font-weight 600
@@ -167,17 +153,15 @@ $background-color = #f6f7f8
   border none
   margin-right 50px
   font-size 18px
-
 .mr-2
   color $blue-color
   background-color $background-add-code
 
-
-@media  (max-width: 1000px)
+@media (max-width: 992px)
   .nav-link
     font-size 12px
     margin-left -5px
-  .btn-add-code
+ .btn-add-code
     font-size 12px
   .dropdown-button
     font-size 14px
@@ -196,6 +180,26 @@ $background-color = #f6f7f8
   #data-v-29e8c3c6
     background-color #b6bfd5
 
-
-
+@media (max-width: 1200px)
+  .nav-link
+    font-size 14px
+    margin-left -5px
+  .btn-add-code
+    font-size 14px
+  .dropdown-button
+    font-size 16px
+    margin-right 20px
+  .navbar-logo
+    height 30px
+    width 30px
+  .svg-icons
+    display flex
+    flex-direction row
+  .p-badge
+    right 10px
+    font-size 12px
+  .d-flex
+    width 130px
+  #data-v-29e8c3c6
+    background-color #b6bfd5
 </style>

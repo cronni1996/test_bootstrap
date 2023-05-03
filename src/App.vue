@@ -1,9 +1,7 @@
 <template>
-
   <Header class="header"/>
   <div class="down">
     <sitebar class="sitebar"/>
-
     <div class="mainDown">
       <main-up class="mainUp"/>
       <div class="main21frr">
@@ -14,7 +12,6 @@
         <MainRight/>
       </div>
     </div>
-
   </div>
 </template>
 
@@ -47,38 +44,27 @@ $background-color = #f6f7f8
   width 100%
   display flex
   flex-direction column
-
-
 #app
-
   flex-direction column
-
 .main21frr
   margin-left 5px
   display flex
   flex-direction row
   background-color $background-color
-
-
 .down
   display flex
   flex-direction row
-
 .mainDown
   flex-direction column
   width 100%
-
 .mainDownGroup
   display flex
   flex-direction row
-
 .mainDownLeftGroup
-
   display flex
   flex-direction column
   width 100%
-  margin-left 10px
-
+  margin-left 70px
 @media (max-width: 992px)
   .main21frr
     flex-direction column

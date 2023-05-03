@@ -54,15 +54,12 @@
           <i class="bi bi-people"></i>
           <button type="button" class="btn btn-light">Customers</button>
         </div>
-
-
       </div>
     </div>
     <div class="services">
       <div class="add-services">
         <div class="add-servis">
           <h2>Add Services</h2>
-
           <div class="btn-group dropend">
             <button type="button" class="btn-add-service btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown"
                     aria-expanded="false">
@@ -106,7 +103,6 @@
                 <li><a class="dropdown-item" href="#">Something else here</a></li>
               </ul>
             </div>
-
           </div>
           <div class="intercom">
             <img src="../img/intercom.png"/>
@@ -122,7 +118,6 @@
                 <li><a class="dropdown-item" href="#">Something else here</a></li>
               </ul>
             </div>
-
           </div>
           <div class="messenger">
             <img src="../img/messenger.png"/>
@@ -138,9 +133,7 @@
                 <li><a class="dropdown-item" href="#">Something else here</a></li>
               </ul>
             </div>
-
           </div>
-
           <div class="add-plagin">
             <img src="../img/add.png"/>
             <!-- Default dropend button -->
@@ -159,7 +152,6 @@
         </div>
       </div>
     </div>
-
     <div class="add-project">
       <div class="button-add">
         <button type="button" class="btn btn-primary bi bi-plus-circle">
@@ -167,18 +159,14 @@
       </div>
       <h3>Add New Project</h3>
       <div class="link-invite">
-      <h4>Our Use</h4>
+        <h4>Our Use</h4>
         <button type="button" v-on:click="zaeb" class="btn-link-add btn btn-light">invite link</button>
-
-    </div>
+      </div>
     </div>
   </div>
 </template>
 
 <script>
-function zaeb() {
-  console.log("zarbal")
-}
 </script>
 
 
@@ -208,87 +196,67 @@ $text-navi {
   display flex
   flex-direction column
   float left
-
 .users
   margin-top 20px
   margin-left 10px
   flex-direction row
   display: flex;
-
   h1
     font-size 20px
     font-family Roboto
     font-weight 900
     $text-color
-
   h2
     font-size 17px
     font-family Roboto
     font-weight 400
     $text-color
-
 .user-avatar
   margin-right 15px
-
 .user-icons
   font-size 30px
   margin-left 40px
   color $text-color
-
 .bi
   margin-right 5px
   color $icons-color
-
 .mr-2
   color $blue-color
   background-color $background-add-code
-
 .btn-group-vertical
   width: 250px;
   margin-left: 11px;
   margin-top: 20px;
-
 .btn
   background-color $background-color
   @extend $text-navi
-
 .btn-group-vertical
   width 250px
-
 .dashboard
   display: flex
   justify-content center
   align-items center
-
 .bi-dashboard
   font-size 20px
-
 .checked
   margin-left 50px
-
 .sidebar-navi
   .bi
     font-size 20px
-
 .calendar
   display: flex
   justify-content center
   align-items center
   color $blue-color
-
   .btn
     color $blue-color
-
-
 .badge-calendar
   display flex
   align-items center
   margin-left 63px
   with 30px
-
 .calendar-bi
   color $blue-color !important
-
 .add-services
   margin-top 30px
   margin-left 10px
@@ -298,12 +266,10 @@ $text-navi {
   display flex
   flex-direction column
   border-radius 10px
-
 .add-servis
   display flex
   margin-top 20px
   margin-left 10px
-
   h2
     color $text-color
     margin-top 20px
@@ -311,11 +277,8 @@ $text-navi {
     font-size 20px
     font-family Roboto, Helvetica Neue Light, Helvetica Neue, Helvetica, Arial, Lucida Grande, sans-serif
     font-weight 600
-
-
 .dropend .dropdown-toggle::after
   content none
-
 .btn-add-service
   background-color $background-block
   margin-top 10px
@@ -323,29 +286,22 @@ $text-navi {
   justify-content center
   height 40px
   border none
-
-
 .link-invite
   display flex
   flex-direction row
   align-items center
-
 .group
   margin-top 30px
   margin-left 25px
-
   button
     margin-top 20px
     border none
     background-color $background-block
     width 200px
     color $text-color
-
   img
     margin-top 20px
     width 30px
-
-
 .add-project
   border-radius 10px
   margin-left 13px
@@ -358,14 +314,11 @@ $text-navi {
   justify-content center
   align-items center
   margin-bottom 50px
-
   button
     background-color $blue-color
     border-radius 30px
-
   .bi
     font-size 80px
-
   .btn-link-add
     background-color $background-block
     padding-left -30px
@@ -375,20 +328,19 @@ $text-navi {
     font-family Roboto, Helvetica Neue Light, Helvetica Neue, Helvetica, Arial, Lucida Grande, sans-serif
     font-size 19px
     font-weight 600
-
   h3
     margin-top 10px
     font-family Roboto, Helvetica Neue Light, Helvetica Neue, Helvetica, Arial, Lucida Grande, sans-serif
     font-weight 900
     font-size 25px
-
   h4
     font-family Roboto, Helvetica Neue Light, Helvetica Neue, Helvetica, Arial, Lucida Grande, sans-serif
     font-weight 600
     font-size 19px
     margin-top 7px
     margin-right 7px
-
+.form-check-input
+  margin-left 20px !important
 
 @media (max-width 992px)
   .container-sitebar
@@ -398,11 +350,11 @@ $text-navi {
   .goodDay
     font-size 10px !important
   .user-name
-   font-size 14px !important
+    font-size 14px !important
   .users
-   margin-top 10px
+    margin-top 10px
   .user
-   margin-top 15px
+    margin-top 15px
   Button
     font-size 15px !important
   .badge-calendar
@@ -431,18 +383,75 @@ $text-navi {
       width 14px
     .dropdown-toggle
       width 110px
-      font-size 13px!important
+      font-size 13px !important
   .add-project
-      width 170px
-      h3
-        font-size 16px
-      h4
-        font-size 12px
-      .btn-link-add
-        font-size 12px
-        padding-left -30px
-      .bi-plus-circle
-        font-size 30px !important
+    width 170px
+    h3
+      font-size 16px
+    h4
+      font-size 12px
+    .btn-link-add
+      font-size 12px
+      padding-left -30px
+    .bi-plus-circle
+      font-size 30px !important
+  .form-check-input
+    margin-left -35px !important
 
+@media (max-width 1200px)
+  .container-sitebar
+    width 200px
+  .user-avatar
+    margin-left -15px
+  .goodDay
+    font-size 12px !important
+  .user-name
+    font-size 16px !important
+  .users
+    margin-top 10px
+  .user
+    margin-top 15px
+  Button
+    font-size 17px !important
+  .badge-calendar
+    font-size 16px !important
+    margin-left 12px
+  .form-check
+    margin-left 5px
+  .user-icons
+    display flex
+    flex-direction column
+    justify-content center
+    margin-left 15px
+  .svg-icons
+    display flex
+    flex-direction row !important
+    justify-content center
+  .add-services
+    width 170px !important
+    h2
+      font-size 17px
+    .btn-add-service
+      margin-left 5px
+      width 40px !important
+    img
+      height 14px
+      width 14px
+    .dropdown-toggle
+      width 110px
+      font-size 15px !important
+  .add-project
+    width 170px
+    h3
+      font-size 16px
+    h4
+      font-size 14px
+    .btn-link-add
+      font-size 14px
+      padding-left -30px
+    .bi-plus-circle
+      font-size 30px !important
+  .form-check-input
+    margin-left -35px !important
 
 </style>

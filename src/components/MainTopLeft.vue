@@ -50,7 +50,6 @@
           <h3 class="tags-h3-string"> tags</h3>
         </div>
       </div>
-
       <div class="topLeftUp2">
         <button type="button" class="btn-goToFile btn btn-light">Go to file</button>
         <div class="btn-group">
@@ -100,33 +99,27 @@ $color-black = black
     margin-left 60px
   i
     margin-left 10px
-
-
   .topLeftUp
     display flex
     width 100%
   .topLeftUp1
     height 120px
-
     width 100%
     flex-grow 1
     display flex
     flex-direction row
     align-items center
-
   .branches
     display flex
     flex-direction row
     justify-content center
     align-items center
-
   .tags
     margin-left 20px
     display flex
     flex-direction row
     justify-content center
     align-items center
-
   .topLeftUp2
     align-items center
     display flex
@@ -142,11 +135,8 @@ $color-black = black
   display flex
   flex-direction row
   justify-content center
-
 .btn-primary
   border none
-
 .btn-secondary
   border none
-
 </style>
