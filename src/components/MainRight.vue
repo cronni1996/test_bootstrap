@@ -1,5 +1,5 @@
 <template>
-  <div class="container-mainRight">
+  <div class="container-main-right">
     <div class="content">
       <div class="text">
         <h3 class="text-h3">About</h3>
@@ -74,24 +74,23 @@
           <h5 class="int-contributors">1.559</h5>
         </div>
         <div class="avatar-contributors">
-          <Avatar label="SD" class="mr-2 mr-2-sd" size="xlarge" shape="circle"
+          <Avatar label="SD" class="mr-2 mr-2-sd" size="large" shape="circle"
                   style="font-size:17px; font-family: Roboto, Helvetica Neue Light, Helvetica Neue, Helvetica, Arial, Lucida Grande, sans-serif;font-weight:900;background-color:#f6e5ed"/>
           <i v-badge.danger class=" p-overlay1" style="font-size: 2rem; "/>
-          <Avatar label="SG" class="mr-2 mr-2-sg" size="xlarge" shape="circle"
+          <Avatar label="SG" class="mr-2 mr-2-sg" size="large" shape="circle"
                   style="font-size:17px;  font-family: Roboto, Helvetica Neue Light, Helvetica Neue, Helvetica, Arial, Lucida Grande, sans-serif;font-weight:900; background-color:#e4eafa"/>
-          <Avatar label="FD" class="mr-2 mr-2-fd" size="xlarge" shape="circle"
+          <Avatar label="FD" class="mr-2 mr-2-fd" size="large" shape="circle"
                   style="font-size:17px; font-family: Roboto, Helvetica Neue Light, Helvetica Neue, Helvetica, Arial, Lucida Grande, sans-serif;font-weight:900; background-color:#e4f7f5"/>
           <i v-badge.danger class=" p-overlay1" style="font-size: 2rem;"/>
-          <Avatar label="MH" class="mr-2 mr-2-mh1" size="xlarge" shape="circle"
+          <Avatar label="MH" class="mr-2 mr-2-mh1" size="large" shape="circle"
                   style="font-size:17px; font-family: Roboto, Helvetica Neue Light, Helvetica Neue, Helvetica, Arial, Lucida Grande, sans-serif;font-weight:900;background-color:#e3f4e6"/>
           <Badge class="badge3" value="2" position="releative" color="red"/>
-          <Avatar label="MH" class="mr-2 mr-2-mh2" size="xlarge" shape="circle"
+          <Avatar label="MH" class="mr-2 mr-2-mh2" size="large" shape="circle"
                   style="font-size:17px; font-family: Roboto, Helvetica Neue Light, Helvetica Neue, Helvetica, Arial, Lucida Grande, sans-serif;font-weight:900;background-color:#f6e5e5"/>
           <i v-badge.danger class=" p-overlay1" style="font-size: 2rem; "/>
-          <Avatar label="MH" class="mr-2 mr-2-mh3" size="xlarge" shape="circle"
+          <Avatar label="MH" class="mr-2 mr-2-mh3" size="large" shape="circle"
                   style="font-size:17px; font-family: Roboto, Helvetica Neue Light, Helvetica Neue, Helvetica, Arial, Lucida Grande, sans-serif;font-weight:900;background-color:#f6e5ed"/>
-
-          <Avatar label="KL" class="mr-2 mr-2-kl" size="xlarge" shape="circle"
+          <Avatar label="KL" class="mr-2 mr-2-kl" size="large" shape="circle"
                   style="font-size:17px; font-family: Roboto, Helvetica Neue Light, Helvetica Neue, Helvetica, Arial, Lucida Grande, sans-serif;font-weight:900;background-color:#f3ece5"/>
           <i v-badge.danger class=" p-overlay1" style="font-size: 2rem; "/>
         </div>
@@ -101,7 +100,6 @@
 </template>
 
 <script>
-
 </script>
 
 <style lang="stylus">
@@ -122,7 +120,7 @@ $color-mh2 = #e42f2f
 $color-mh3 = #e4317c
 $color-kl = #ca7329
 
-.container-mainRight
+.container-main-right
   display flex
   flex-direction column
   width 450px
@@ -143,7 +141,7 @@ $color-kl = #ca7329
   bottom 23px
 h5
   font-family Roboto, Helvetica Neue Light, Helvetica Neue, Helvetica, Arial, Lucida Grande, sans-serif
-  font-size 16px
+  font-size 14px
   font-weight 600
   background-color $background-add-code
   padding 5px 15px 5px 15px
@@ -171,6 +169,9 @@ h5
 .three
   margin-top 20px
   max-width 415px
+  .three-line1, .three-line2, .three-line3
+    display flex
+    flex-wrap wrap
 .text-three
   font-family Roboto, Helvetica Neue Light, Helvetica Neue, Helvetica, Arial, Lucida Grande, sans-serif
   font-weight 600
@@ -181,11 +182,10 @@ svg
   height 25px
   margin 0px -1px 0px -5px
 .bi
-  font-size 18px
   color $text-color
 h4
   color $text-color
-  font-size 18px
+  font-size 14px
 .stars
   display flex
   flex-direction row
@@ -215,23 +215,34 @@ h4
     margin-top 10px
 .text
   max-width 415px
-.mr-2
-  margin-top 20px
-  margin-left 30px
 .mr-2-sd
   color $color-sd
+    margin-top 20px
+    margin-left 30px
 .mr-2-sg
   color $color-sg
+    margin-top 20px
+    margin-left 30px
 .mr-2-fd
   color $color-fd
+    margin-top 20px
+    margin-left 30px
 .mr-2-mh1
   color $color-mh1
+    margin-top 20px
+    margin-left 30px
 .mr-2-mh2
   color $color-mh2
+    margin-top 20px
+    margin-left 30px
 .mr-2-mh3
   color $color-mh3
+    margin-top 20px
+    margin-left 30px
 .mr-2-kl
   color $color-kl
+    margin-top 20px
+     margin-left 30px
 #pv_id_1_badge, #pv_id_2_badge
   margin-top 50px
   margin-right 10px
@@ -241,7 +252,9 @@ h4
   margin-right 10px
   background-color #29ca39
 .contributors
-  max-width 415px
+  width 250px
+  .mr-2
+    margin-left 5px
 .contributors-top
   display flex
   flex-direction row
@@ -249,7 +262,7 @@ h4
   margin-left 20px
   .text-contributors
     font-family Roboto, Helvetica Neue Light, Helvetica Neue, Helvetica, Arial, Lucida Grande, sans-serif
-    font-size 30px
+    font-size 16px
     font-weight 900
     color $text-color-black
     margin-right 20px
@@ -258,50 +271,20 @@ h4
     align-items center
     background-color none
 
-@media (max-width: 992px)
-  .container-mainRight
-  .content
-    display flex
-    flex-direction row
-    flex-wrap wrap
-    align-content center
-    justify-content center
-    align-items center
-
 @media (max-width: 1200px)
-  .container-mainRight
+  .container-main-right
     width 218px
   .three-line1, .three-line2, .three-line3
     flex-wrap wrap
   .p-avatar
-    width 2.5rem !important
-    height 2.5rem !important
+    width 2.5rem
+    height 2.5rem
     .p-avatar-text
-      font-size 12px !important
+      font-size 12px
   .int-contributors
     font-size 12px
   .contributors
     margin-bottom 20px
-  .content
-    margin-left 20px
-
-
-@media (max-width: 1400px)
-  .container-mainRight
-    width 218px
-  .three-line1, .three-line2, .three-line3
-    flex-wrap wrap
-  .p-avatar
-    width 3rem !important
-    height 3rem !important
-    .p-avatar-text
-      font-size 16px !important
-  .int-contributors
-    font-size 12px
-  .contributors
-    margin-bottom 20px
-  .text-contributors
-    font-size 14px !important
   .content
     margin-left 20px
 

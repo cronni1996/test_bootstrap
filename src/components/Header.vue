@@ -4,7 +4,7 @@
       <div class="container-fluid">
         <a class="navbar-logo" href="#"></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
-                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                aria-controls="navbar-nav-dropdown" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
@@ -41,19 +41,19 @@
               </ul>
             </li>
           </ul>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          </form>
         </div>
-        <form class="d-flex" role="search">
-          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-        </form>
         <div class="svg-icons">
           <i class="bi-icons bi-emoji-dizzy-fill"></i>
           <i class="bi-icons bi-emoji-dizzy-fill"></i>
           <i class="bi-icons bi-emoji-dizzy-fill"></i>
         </div>
         <div class="avatar-group">
-          <Avatar label="MH" class="mr-2" size="large" shape="circle"
-                  style="font-size:17px; font-family: Roboto, Helvetica Neue Light, Helvetica Neue, Helvetica, Arial, Lucida Grande, sans-serif;font-weight:900;"/>
-          <Badge class="badge" value="2" position="releative" color="red"/>
+          <Avatar label="MH" class="mr-2 mr-2-header" shape="circle"
+                  style="font-size:12px; font-family: Roboto, Helvetica Neue Light, Helvetica Neue, Helvetica, Arial, Lucida Grande, sans-serif;font-weight:900;"/>
+          <Badge class="badge3" value="2" position="releative" color="red"/>
         </div>
         <div class="user">
           <div class="dropdown">
@@ -110,6 +110,7 @@ $background-color = #f6f7f8
   width 100%
 .d-flex
   position relative
+  width auto
   margin-right 20px
 .svg-icons
   position relative
@@ -135,6 +136,8 @@ $background-color = #f6f7f8
   position relative
   right 10px
   bottom 23px
+.mr-2-header
+  margin-top 20px
 .user
   display flex
   flex-direction row
@@ -157,12 +160,43 @@ $background-color = #f6f7f8
   color $blue-color
   background-color $background-add-code
 
-@media (max-width: 992px)
+
+@media (max-width: 1200px)
   .nav-link
-    font-size 12px
+    font-size 10px
     margin-left -5px
- .btn-add-code
-    font-size 12px
+.btn-add-code
+  font-size 10px
+.dropdown-button
+  font-size 10px
+  margin-right 20px
+.navbar-logo
+  height 30px
+  width 30px
+.svg-icons
+  display flex
+  flex-direction column
+.button-add-code
+  font-size 10px
+.form-control
+  height 30px
+.svg-icons
+  display flex
+  flex-direction column
+  .bi-emoji-dizzy-fill
+    font-size 16px
+.avatar-group
+  margin-bottom 15px
+.btn-add-service
+  width 20px
+
+
+@media (min-width: 1200px)
+  .nav-link
+    font-size 14px
+    margin-left -5px
+  .btn-add-code
+    font-size 14px
   .dropdown-button
     font-size 14px
     margin-right 20px
@@ -172,34 +206,20 @@ $background-color = #f6f7f8
   .svg-icons
     display flex
     flex-direction column
-  .p-badge
-    right 10px
-    font-size 10px
-  .d-flex
-    width 130px
-  #data-v-29e8c3c6
-    background-color #b6bfd5
-
-@media (max-width: 1200px)
-  .nav-link
+  .button-add-code
     font-size 14px
-    margin-left -5px
-  .btn-add-code
-    font-size 14px
-  .dropdown-button
-    font-size 16px
-    margin-right 20px
-  .navbar-logo
+  .form-control
     height 30px
-    width 30px
   .svg-icons
     display flex
     flex-direction row
-  .p-badge
-    right 10px
-    font-size 12px
-  .d-flex
-    width 130px
-  #data-v-29e8c3c6
-    background-color #b6bfd5
+  .bi-emoji-dizzy-fill
+    font-size 16px
+  .avatar-group
+    margin-bottom 15px
+  .btn-add-service
+    width 20px
+  .mr-2-header
+    .p-avatar-text
+      font-size 12px
 </style>

@@ -1,5 +1,5 @@
 <template>
-  <div class="container-mainUp">
+  <div class="container-main-up">
     <div class="flex-dirrec">
       <div class="main1">
         <div class="left">
@@ -77,11 +77,11 @@ $background-block = #fdfdfd
 $color-black = black
 
 
-.container-mainUp
+.container-main-up
   display flex
   flex-direction row
   background-color $background-color
-  margin-left 5px
+  border-left 5px solid $background-block
   height 138px
   flex-grow 1
   max-width: 100%
@@ -144,8 +144,6 @@ a
   font-family Roboto, Helvetica Neue Light, Helvetica Neue, Helvetica, Arial, Lucida Grande, sans-serif
   font-size 30px
   text-decoration: none
-.bi
-  font-size 30px
 .button-public
   margin-left 20px
   border-radius 20px
@@ -162,83 +160,64 @@ a
   font-size 15px
   margin-right 15px
 
-@media (max-width: 992px)
-  .container-mainUp
-    width 770px
-  .breadcrumb-item
-    margin-top 10px
-    font-size 17px!important
-  .button-public
-    font-size 11px!important
-    margin-right 5px
-  .bi-journal-bookmark
-    margin-top 10px
-  .right-main1
-    font-size 12px !important
-    margin-left 5px !important
-  .right-main1-bi
-    font-size 12px !important
-  .badge-main1
-    font-size 8px !important
-  .main1, .main2
-    margin-left 20px
-  .main2
-    i
-      font-size 14px !important
-    button
-      font-size 12px !important
 
-@media (max-width: 1200px)
-  .container-mainUp
-    width 975px
+@media (max-width: 1200px) and (min-width: 1000px)
+  .container-main-up
+    width 100%
   .breadcrumb-item
     margin-top 10px
-    font-size 17px!important
+    font-size 17px
   .button-public
-    font-size 11px!important
+    font-size 11px
     margin-right 5px
   .bi-journal-bookmark
     margin-top 10px
   .right-main1
-    font-size 12px !important
-    margin-left 5px !important
+    font-size 10px
+    margin-left 5px
   .right-main1-bi
-    font-size 12px !important
+    font-size 10px
   .badge-main1
-    font-size 8px !important
+    font-size 8px
   .main1, .main2
     margin-left 20px
   .main2
     i
-      font-size 14px !important
+      font-size 14px
     button
-      font-size 12px !important
+      font-size 12px
+  .p-badge
+    right 0
 
-@media (max-width: 1400px)
-  .container-mainUp
-    width 927px
+@media (min-width: 1200px)
+  .container-main-up
+    width 100%
+    padding-left 30px
   .breadcrumb-item
     margin-top 10px
-    font-size 19px!important
+    font-size 20px
   .button-public
-    font-size 14px!important
+    font-size 12px
     margin-right 5px
   .bi-journal-bookmark
     margin-top 10px
+    font-size 20px
   .right-main1
-    font-size 14px !important
-    margin-left 5px !important
+    font-size 15px
+    margin-left 5px
   .right-main1-bi
-    font-size 14px !important
+    font-size 15px
   .badge-main1
-    font-size 10px !important
+    font-size 13px
   .main1, .main2
     margin-left 20px
   .main2
     i
-      font-size 16px !important
+      font-size 14px
     button
-      font-size 16px !important
+      font-size 14px
+  .p-badge
+    right 0
 
 
 </style>

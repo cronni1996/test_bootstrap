@@ -16,7 +16,7 @@ import BadgeDirective from 'primevue/badgedirective';
 import InputSwitch from 'primevue/inputswitch';
 import SpeedDial from 'primevue/speeddial';
 import Toast from 'primevue/toast';
-import { Octokit } from '@octokit/rest'
+
 
 
 
@@ -29,5 +29,4 @@ app.directive('badge', BadgeDirective)
 app.component('InputSwitch', InputSwitch)
 app.component('SpeedDial', SpeedDial)
 app.component('Toast', Toast)
-app.component("Octokit", Octokit)
 app.mount('#app')

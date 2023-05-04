@@ -1,13 +1,13 @@
 <!--suppress ALL -->
 <template>
-  <div class="container-sitebar">
+  <div class="container-sidebar">
     <div class="users">
       <div class="user-avatar">
-        <Avatar label="MH" class="mr-2" size="large" shape="circle"
+        <Avatar label="MH" class="mr-2 mr-2-sidebar" size="large" shape="circle"
                 style="font-size:17px; font-family: Roboto, Helvetica Neue Light, Helvetica Neue, Helvetica, Arial, Lucida Grande, sans-serif;font-weight:900;"/>
       </div>
       <div class="user">
-        <h2 class="goodDay">Good Day</h2>
+        <h2 class="good-day">Good Day</h2>
         <h1 class="user-name">Michail D.</h1>
       </div>
       <div class="user-icons">
@@ -18,41 +18,33 @@
     <div class="sidebar-navi">
       <div class="btn-group-vertical" role="group" aria-label="Vertical button group">
         <div class="dashboard">
-          <i class="bi-dashboard bi bi-columns-gap"></i>
-          <button type="button" class="btn btn-light">Dashboard</button>
+          <button type="button" class="btn btn-light"> <i class="bi-dashboard bi bi-columns-gap"></i>Dashboard</button>
           <div class="form-check form-switch">
             <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
             <label class="form-check-label" for="flexSwitchCheckDefault"></label>
           </div>
         </div>
         <div class="project">
-          <i class="bi bi-folder"></i>
-          <button type="button" class="btn btn-light">My Project Task</button>
+          <button type="button" class="btn btn-light"><i class="bi bi-folder"></i>My Project Task</button>
         </div>
         <div class="calendar">
-          <i class="calendar-bi bi bi-calendar2-date"></i>
-          <button type="button" class="btn btn-light">Calendars</button>
-          <Badge class="badge-calendar" value="12" severity="info" style="font-size:19px"></Badge>
+          <button type="button" class="btn btn-light"> <i class="calendar-bi bi bi-calendar2-date"></i>Calendars</button>
+          <Badge class="badge-calendar" value="12" severity="info" style="font-size:12px"></Badge>
         </div>
         <div class="mails">
-          <i class="bi bi-envelope-exclamation"></i>
-          <button type="button" class="btn btn-light">Mails</button>
+          <button type="button" class="btn btn-light"> <i class="bi bi-envelope-exclamation"></i>Mails</button>
         </div>
         <div class="notifications">
-          <i class="bi bi-bell"></i>
-          <button type="button" class="btn btn-light">Notifications</button>
+          <button type="button" class="btn btn-light"><i class="bi bi-bell"></i>Notifications</button>
         </div>
         <div class="sales">
-          <i class="bi bi-bag-check"></i>
-          <button type="button" class="btn btn-light">Sales</button>
+          <button type="button" class="btn btn-light"><i class="bi bi-bag-check"></i>Sales</button>
         </div>
         <div class="applications">
-          <i class="bi bi-grid-3x3-gap"></i>
-          <button type="button" class="btn btn-light">Applications</button>
+          <button type="button" class="btn btn-light"> <i class="bi bi-grid-3x3-gap"></i>Applications</button>
         </div>
         <div class="customers">
-          <i class="bi bi-people"></i>
-          <button type="button" class="btn btn-light">Customers</button>
+          <button type="button" class="btn btn-light"><i class="bi bi-people"></i>Customers</button>
         </div>
       </div>
     </div>
@@ -72,7 +64,6 @@
             </ul>
           </div>
         </div>
-
         <div class="group">
           <div class="jira">
             <img src="../img/jira.png"/>
@@ -160,7 +151,7 @@
       <h3>Add New Project</h3>
       <div class="link-invite">
         <h4>Our Use</h4>
-        <button type="button" v-on:click="zaeb" class="btn-link-add btn btn-light">invite link</button>
+        <button type="button" class="btn-link-add btn btn-light">invite link</button>
       </div>
     </div>
   </div>
@@ -189,16 +180,15 @@ $text-navi {
 }
 
 
-.container-sitebar
+.container-sidebar
   width 330px
-  height 100%
+  height 1360px
   background-color $background-color
   display flex
   flex-direction column
   float left
 .users
   margin-top 20px
-  margin-left 10px
   flex-direction row
   display: flex;
   h1
@@ -211,10 +201,7 @@ $text-navi {
     font-family Roboto
     font-weight 400
     $text-color
-.user-avatar
-  margin-right 15px
 .user-icons
-  font-size 30px
   margin-left 40px
   color $text-color
 .bi
@@ -261,7 +248,7 @@ $text-navi {
   margin-top 30px
   margin-left 10px
   width 260px
-  height 450px
+  height 350px
   background-color $background-block
   display flex
   flex-direction column
@@ -273,8 +260,8 @@ $text-navi {
   h2
     color $text-color
     margin-top 20px
-    margin-left 25px
-    font-size 20px
+    margin-left 15px
+    font-size 12px
     font-family Roboto, Helvetica Neue Light, Helvetica Neue, Helvetica, Arial, Lucida Grande, sans-serif
     font-weight 600
 .dropend .dropdown-toggle::after
@@ -291,7 +278,6 @@ $text-navi {
   flex-direction row
   align-items center
 .group
-  margin-top 30px
   margin-left 25px
   button
     margin-top 20px
@@ -340,25 +326,97 @@ $text-navi {
     margin-top 7px
     margin-right 7px
 .form-check-input
-  margin-left 20px !important
+  margin-left 20px
 
-@media (max-width 992px)
-  .container-sitebar
+@media (max-width 1200px) and (min-width: 1000px)
+  .container-sidebar
     width 200px
   .user-avatar
-    margin-left -15px
-  .goodDay
-    font-size 10px !important
+    margin-left 15px
+  .good-day
+    font-size 10px
   .user-name
-    font-size 14px !important
+    font-size 14px
   .users
     margin-top 10px
   .user
     margin-top 15px
-  Button
-    font-size 15px !important
   .badge-calendar
-    font-size 14px !important
+    font-size 14px
+    margin-left 12px
+  .form-check
+    margin-left 5px
+  .user-icons
+    display flex
+    flex-direction column
+    justify-content center
+    margin-left 15px
+    float right
+  .svg-icons
+    display flex
+    flex-direction row
+    justify-content center
+  .add-services
+    width 170px
+    .btn-add-service
+      margin-left 5px
+      width 40px
+    img
+      height 14px
+      width 14px
+    .dropdown-toggle
+      width 110px
+      font-size 13px
+  .add-project
+    width 170px
+    h3
+      font-size 12px
+    h4
+      font-size 12px
+    .btn-link-add
+      font-size 12px
+      padding-left -30px
+    .bi-plus-circle
+      font-size 30px
+  .form-check-input
+    margin-left -35px
+ .bi-person, .bi-gear
+   font-size 18px
+   margin-top 5px
+  .mr-2-sidebar
+    margin 10px 0px 0px 0px
+  .users
+    .user
+      flex-grow 1
+      margin-left 10px
+    h2
+      font-size 12px
+    h1
+      font-size 13px
+  .btn-group-vertical
+    width auto
+    Button
+     font-size 13px
+     flex-grow 1
+  .btn-group
+    .btn-add-service
+      width 40px
+
+@media (min-width 1200px)
+  .container-sidebar
+    width 200px
+  .user-avatar
+    margin-left 15px
+  .good-day
+    font-size 10px
+  .user-name
+    font-size 14px
+  .users
+    margin-top 10px
+  .user
+    margin-top 15px
+  .badge-calendar
+    font-size 14px
     margin-left 12px
   .form-check
     margin-left 5px
@@ -369,89 +427,53 @@ $text-navi {
     margin-left 15px
   .svg-icons
     display flex
-    flex-direction row !important
+    flex-direction row
     justify-content center
   .add-services
-    width 170px !important
-    h2
-      font-size 15px
+    width 170px
     .btn-add-service
       margin-left 5px
-      width 40px !important
+      width 40px
     img
       height 14px
       width 14px
     .dropdown-toggle
       width 110px
-      font-size 13px !important
+      font-size 13px
   .add-project
     width 170px
     h3
-      font-size 16px
+      font-size 12px
     h4
       font-size 12px
     .btn-link-add
       font-size 12px
       padding-left -30px
     .bi-plus-circle
-      font-size 30px !important
+      font-size 30px
   .form-check-input
-    margin-left -35px !important
+    margin-left -35px
 
-@media (max-width 1200px)
-  .container-sitebar
-    width 200px
-  .user-avatar
-    margin-left -15px
-  .goodDay
-    font-size 12px !important
-  .user-name
-    font-size 16px !important
+  .mr-2-sidebar
+    margin 10px 0px 0px 0px
   .users
-    margin-top 10px
-  .user
-    margin-top 15px
-  Button
-    font-size 17px !important
-  .badge-calendar
-    font-size 16px !important
-    margin-left 12px
-  .form-check
-    margin-left 5px
-  .user-icons
-    display flex
-    flex-direction column
-    justify-content center
-    margin-left 15px
-  .svg-icons
-    display flex
-    flex-direction row !important
-    justify-content center
-  .add-services
-    width 170px !important
+    .user
+      flex-grow 1
+      margin-left 10px
     h2
-      font-size 17px
+      font-size 12px
+    h1
+      font-size 13px
+    .user-icons
+      float right
+  .btn-group-vertical
+    width auto
+    Button
+      font-size 13px
+      flex-grow 1
+  .btn-group
     .btn-add-service
-      margin-left 5px
-      width 40px !important
-    img
-      height 14px
-      width 14px
-    .dropdown-toggle
-      width 110px
-      font-size 15px !important
-  .add-project
-    width 170px
-    h3
-      font-size 16px
-    h4
-      font-size 14px
-    .btn-link-add
-      font-size 14px
-      padding-left -30px
-    .bi-plus-circle
-      font-size 30px !important
-  .form-check-input
-    margin-left -35px !important
+      width 40px
+
 
 </style>

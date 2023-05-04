@@ -2,12 +2,12 @@
   <Header class="header"/>
   <div class="down">
     <sitebar class="sitebar"/>
-    <div class="mainDown">
+    <div class="main-down">
       <main-up class="mainUp"/>
       <div class="main21frr">
-        <div class="mainDownLeftGroup">
-          <MainTopLeft class="mainTopLeft"/>
-          <MainDownLeft class="mainDownLeft"/>
+        <div class="main-down-left-group">
+          <MainTopLeft class="main-top-left"/>
+          <MainDownLeft class="main-down-left"/>
         </div>
         <MainRight/>
       </div>
@@ -16,9 +16,9 @@
 </template>
 
 <script>
-import Header from "@/components/header.vue";
-import Sitebar from "@/components/sitebar.vue";
-import MainUp from "@/components/mainUp.vue"
+import Header from "@/components/Header.vue";
+import Sitebar from "@/components/Sidebar.vue";
+import MainUp from "@/components/MainUp.vue"
 import MainTopLeft from "@/components/MainTopLeft.vue";
 import MainDownLeft from "@/components/MainDownLeft.vue"
 import MainRight from "@/components/MainRight.vue"
@@ -32,14 +32,13 @@ export default {
     MainTopLeft,
     MainDownLeft,
     MainRight
-
-
   }
 }
 </script>
 
 <style lang="stylus">
 $background-color = #f6f7f8
+$background-add-code= white
 .header
   width 100%
   display flex
@@ -47,25 +46,30 @@ $background-color = #f6f7f8
 #app
   flex-direction column
 .main21frr
-  margin-left 5px
+  border-left 5px solid $background-add-code
   display flex
   flex-direction row
   background-color $background-color
+  padding-bottom: 30px;
 .down
+  width 100%
   display flex
   flex-direction row
-.mainDown
+  .main-down-left-group
+    margin-left 5px
+    width 66%
+.main-down
   flex-direction column
   width 100%
-.mainDownGroup
+.main-down-group
   display flex
   flex-direction row
-.mainDownLeftGroup
+.main-down-left-group
   display flex
   flex-direction column
-  width 100%
+  width 80%
   margin-left 70px
-@media (max-width: 992px)
-  .main21frr
-    flex-direction column
+
+
+
 </style>

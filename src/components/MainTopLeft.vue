@@ -1,11 +1,11 @@
 <template>
-  <div class="container-mainTopLeft">
-    <div class="topLeftUp">
-      <div class="topLeftUp1">
+  <div class="container-main-top-left">
+    <div class="top-left-up">
+      <div class="top-left-up1">
         <div class="dropdown">
           <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
                   aria-expanded="false">
-            <svg width="30px" height="30px" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><title>
+            <svg width="20px" height="20px" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><title>
               ionicons-v5-d</title>
               <circle cx="160" cy="96" r="48"
                       style="fill:none;stroke:#b6bfd5;stroke-linecap:round;stroke-linejoin:round;stroke-width:32px"/>
@@ -50,8 +50,8 @@
           <h3 class="tags-h3-string"> tags</h3>
         </div>
       </div>
-      <div class="topLeftUp2">
-        <button type="button" class="btn-goToFile btn btn-light">Go to file</button>
+      <div class="top-left-up2">
+        <button type="button" class="btn-go-to-file btn btn-light">Go to file</button>
         <div class="btn-group">
           <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
             Code
@@ -84,26 +84,26 @@ $icons-color = #b7c1d7
 $background-block = #fdfdfd
 $color-black = black
 
-.container-mainTopLeft
+.container-main-top-left
   display flex
   width 100%
   flex-grow 1
   margin-top 5px
   h3
     font-family Roboto, Helvetica Neue Light, Helvetica Neue, Helvetica, Arial, Lucida Grande, sans-serif
-    font-size 23px
+    font-size 12px
     font-weight 400
     color $text-color
     margin-left 10px
   .svg-branches
-    margin-left 60px
+    margin-left 20px
   i
     margin-left 10px
-  .topLeftUp
+  .top-left-up
     display flex
     width 100%
-  .topLeftUp1
-    height 120px
+  .top-left-up1
+    height 60px
     width 100%
     flex-grow 1
     display flex
@@ -120,7 +120,7 @@ $color-black = black
     flex-direction row
     justify-content center
     align-items center
-  .topLeftUp2
+  .top-left-up2
     align-items center
     display flex
     flex-direction row
@@ -130,13 +130,16 @@ $color-black = black
         display flex
         flex-direction row
         align-content center
-.btn-goToFile
+.btn-go-to-file
+  font-size 12px
   width 120px
   display flex
   flex-direction row
   justify-content center
 .btn-primary
+  font-size 12px
   border none
 .btn-secondary
+  font-size 12px
   border none
 </style>
