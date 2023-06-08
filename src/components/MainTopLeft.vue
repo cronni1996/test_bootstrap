@@ -5,19 +5,7 @@
         <div class="dropdown">
           <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
                   aria-expanded="false">
-            <svg width="20px" height="20px" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><title>
-              ionicons-v5-d</title>
-              <circle cx="160" cy="96" r="48"
-                      style="fill:none;stroke:#b6bfd5;stroke-linecap:round;stroke-linejoin:round;stroke-width:32px"/>
-              <circle cx="160" cy="416" r="48"
-                      style="fill:none;stroke:#b6bfd5;stroke-linecap:round;stroke-linejoin:round;stroke-width:32px"/>
-              <line x1="160" y1="368" x2="160" y2="144"
-                    style="fill:none;stroke:#b6bfd5;stroke-linecap:round;stroke-linejoin:round;stroke-width:32px"/>
-              <circle cx="352" cy="160" r="48"
-                      style="fill:none;stroke:#b6bfd5;stroke-linecap:round;stroke-linejoin:round;stroke-width:32px"/>
-              <path d="M352,208c0,128-192,48-192,160"
-                    style="fill:none;stroke:#b6bfd5;stroke-linecap:round;stroke-linejoin:round;stroke-width:32px"/>
-            </svg>
+            <Forks/>
             Development
           </button>
           <ul class="dropdown-menu">
@@ -28,19 +16,9 @@
         </div>
 
         <div class="branches">
-          <svg class="svg-branches" width="30px" height="30px" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><title>
-            ionicons-v5-d</title>
-            <circle cx="160" cy="96" r="48"
-                    style="fill:none;stroke:#b6bfd5;stroke-linecap:round;stroke-linejoin:round;stroke-width:32px"/>
-            <circle cx="160" cy="416" r="48"
-                    style="fill:none;stroke:#b6bfd5;stroke-linecap:round;stroke-linejoin:round;stroke-width:32px"/>
-            <line x1="160" y1="368" x2="160" y2="144"
-                  style="fill:none;stroke:#b6bfd5;stroke-linecap:round;stroke-linejoin:round;stroke-width:32px"/>
-            <circle cx="352" cy="160" r="48"
-                    style="fill:none;stroke:#b6bfd5;stroke-linecap:round;stroke-linejoin:round;stroke-width:32px"/>
-            <path d="M352,208c0,128-192,48-192,160"
-                  style="fill:none;stroke:#b6bfd5;stroke-linecap:round;stroke-linejoin:round;stroke-width:32px"/>
-          </svg>
+          <div class="svg-branches">
+         <Forks/>
+          </div>
           <h3 class="branches-h3-int"> 15 </h3>
           <h3 class="branches-h3-string"> branches </h3>
         </div>
@@ -72,17 +50,16 @@
 </template>
 
 <script>
+import {defineComponent} from "vue";
+import Forks from "@/components/Forks.vue";
+
+export default defineComponent({
+  components: {Forks}
+})
 </script>
 
-<style lang="stylus">
-$background-add-code = #e4eafa
-$text-color = #838383
-$badge-color = red
-$blue-color = #3360fd
-$background-color = #f6f7f8
-$icons-color = #b7c1d7
-$background-block = #fdfdfd
-$color-black = black
+<style lang="stylus" scoped>
+@import  "./color"
 
 .container-main-top-left
   display flex
@@ -142,4 +119,5 @@ $color-black = black
 .btn-secondary
   font-size 12px
   border none
+
 </style>

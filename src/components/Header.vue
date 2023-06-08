@@ -46,14 +46,14 @@
           </form>
         </div>
         <div class="svg-icons">
-          <i class="bi-icons bi-emoji-dizzy-fill"></i>
-          <i class="bi-icons bi-emoji-dizzy-fill"></i>
-          <i class="bi-icons bi-emoji-dizzy-fill"></i>
+          <i class="bi-icons bi-square"></i>
+          <i class="bi-icons bi-bar-chart-fill"></i>
+          <i class="bi-icons bi bi-globe"></i>
         </div>
         <div class="avatar-group">
           <Avatar label="MH" class="mr-2 mr-2-header" shape="circle"
                   style="font-size:12px; font-family: Roboto, Helvetica Neue Light, Helvetica Neue, Helvetica, Arial, Lucida Grande, sans-serif;font-weight:900;"/>
-          <Badge class="badge3" value="2" position="releative" color="red"/>
+          <Badge class="badge" value="2" position="releative" color="red"/>
         </div>
         <div class="user">
           <div class="dropdown">
@@ -83,12 +83,7 @@
 </script>
 
 <style lang="stylus" scoped>
-$background-add-code = #e4eafa
-$text-color = #838383
-$badge-color = red
-$blue-color = #3360fd
-$background-color = #f6f7f8
-
+@import  "./color"
 .container-fluid
   font-family 'Roboto' sans-serif
   align-items center
@@ -98,6 +93,8 @@ $background-color = #f6f7f8
   height 90px
 .navbar
   padding-top 0
+  padding-bottom 0
+  border-bottom $border-color 2px solid
 .nav-link
   margin-left 10px
   margin-right 10px
@@ -116,12 +113,12 @@ $background-color = #f6f7f8
   position relative
   margin-right 20px
 .navbar-logo
-  height 33px
-  width 33px
+  height 35px
+  width 35px
   display: flex;
   font-size: 33px;
   color: $text-color;
-  border: 9px $blue-color solid;
+  border: 6px $blue-color solid;
   border-radius: 100px;
 .bi-icons
   font-size 20px
@@ -134,7 +131,7 @@ $background-color = #f6f7f8
 .badge
   background-color $badge-color
   position relative
-  right 10px
+  right 20px
   bottom 23px
 .mr-2-header
   margin-top 20px
@@ -157,6 +154,7 @@ $background-color = #f6f7f8
   margin-right 50px
   font-size 18px
 .mr-2
+  margin-right 10px
   color $blue-color
   background-color $background-add-code
 
@@ -183,8 +181,8 @@ $background-color = #f6f7f8
 .svg-icons
   display flex
   flex-direction column
-  .bi-emoji-dizzy-fill
-    font-size 16px
+.bi-emoji-dizzy-fill
+  font-size 16px
 .avatar-group
   margin-bottom 15px
 .btn-add-service
@@ -200,9 +198,6 @@ $background-color = #f6f7f8
   .dropdown-button
     font-size 14px
     margin-right 20px
-  .navbar-logo
-    height 30px
-    width 30px
   .svg-icons
     display flex
     flex-direction column
@@ -222,4 +217,22 @@ $background-color = #f6f7f8
   .mr-2-header
     .p-avatar-text
       font-size 12px
+
+@media (min-width: 1650px) and (max-width: 2000px)
+  .nav-item
+    margin-left 20px
+  .nav-link
+    font-size 16px
+  .d-flex
+    margin-left 60px
+  .bi-emoji-dizzy-fill
+    font-size 19px
+  .p-avatar
+    width 3rem
+    height 3rem
+  .dropdown-button
+    font-size 16px
+  .btn-add-code
+    font-size 16px
+    font-weight 600
 </style>

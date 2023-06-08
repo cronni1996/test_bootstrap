@@ -37,8 +37,7 @@ export default {
 </script>
 
 <style lang="stylus">
-$background-color = #f6f7f8
-$background-add-code= white
+@import  "/components/color"
 .header
   width 100%
   display flex
@@ -46,7 +45,6 @@ $background-add-code= white
 #app
   flex-direction column
 .main21frr
-  border-left 5px solid $background-add-code
   display flex
   flex-direction row
   background-color $background-color
@@ -56,7 +54,6 @@ $background-add-code= white
   display flex
   flex-direction row
   .main-down-left-group
-    margin-left 5px
     width 66%
 .main-down
   flex-direction column
