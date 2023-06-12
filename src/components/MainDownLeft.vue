@@ -4,8 +4,7 @@
       <div class="line">
         <div class="line1">
           <div class="avatar">
-            <Avatar label="MH" class="mr-2" size="large" shape="circle"
-                    style="font-size:17px; font-family: Roboto, Helvetica Neue Light, Helvetica Neue, Helvetica, Arial, Lucida Grande, sans-serif;font-weight:900; "/>
+            <Avatar label="MH" class="avatar-line1 mr-2" size="large" shape="circle"/>
           </div>
           <div class="text">
             <h4 class="mrdoob">mrdoob</h4>
@@ -236,7 +235,7 @@
 <script>
 </script>
 
-<style lang="stylus" >
+<style lang="stylus" scoped >
 @import  "./color"
 
 
@@ -251,7 +250,7 @@
   display flex
   flex-direction row
   align-items center
-  height 70px
+  height 55px
   .name
     width 150px
     display flex
@@ -281,7 +280,7 @@
   display flex
   flex-direction row
   align-items center
-  height 70px
+  height 60px
   .headerMainDownLeft
     flex-grow 1
     display flex
@@ -375,4 +374,34 @@
   .main21frr
     padding-left 50px
 
+@media (min-width: 1650px)
+  .container-main-down-left
+    margin-top 20px
+  .main-down-left-group
+    margin-top 20px
+    margin-left 75px
+  .line1
+    .avatar-line1
+      width 2rem
+      height 2rem
+      font-weight 600
+    .text
+      max-width 587px
+      h4
+       font-size 14px
+    .right
+      h4
+       font-size 16px
+      .bi-check-lg
+         font-size 30px
+      .bi-clock-history
+         font-size 20px
+  .line2
+    h4
+      font-size 14px
+      font-weight 600
+    .comment
+      margin-left 120px
+    .bi
+      font-size 20px
 </style>

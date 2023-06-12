@@ -31,4 +31,7 @@ export default {
 .calendar-bi
   color $blue-color !important
 
+.btn
+  padding-left 0px
+  margin-left  0px
 </style>

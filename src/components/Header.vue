@@ -72,11 +72,7 @@
       </div>
     </nav>
   </header>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
-        rel="stylesheet">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+
 </template>
 
 <script>
@@ -90,7 +86,7 @@
   display flex
   width 100%
   background-color $background-color
-  height 90px
+  height 110px
 .navbar
   padding-top 0
   padding-bottom 0
@@ -235,4 +231,16 @@
   .btn-add-code
     font-size 16px
     font-weight 600
+
+  .form-control
+    height 30px
+    width 300px
+  .bi-icons
+    margin-right 20px
+  .svg-icons
+    margin-right 2px
+  .navbar-logo
+    margin-left 30px
+    height 33px
+    width 33px
 </style>

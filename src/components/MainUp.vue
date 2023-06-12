@@ -10,7 +10,7 @@
             <nav aria-label="breadcrumb-full">
               <ol class="breadcrumb">
                 <li class="breadcrumb-item active" aria-current="page"><a href="#">mrdoob</a></li>
-                <li class="breadcrumb-item active" aria-current="page">threee.js</li>
+                <li class="three-js-text breadcrumb-item active" aria-current="page">threee.js</li>
               </ol>
             </nav>
           </div>
@@ -36,11 +36,12 @@
           Code
         </button>
         <button type="button" class="btn btn-link"><i class="bi bi-record-circle"></i>Issues
-          <Badge class="badge-pull-request" value="139"></Badge>
+          <Badge class="badge-pull-request" value="332"></Badge>
         </button>
         <button stype="button" class="btn btn-link">
           <Forks class="svg-forks"/>
           Pull request
+          <Badge class="badge-pull-request" value="139"></Badge>
         </button>
         <button type="button" class="btn btn-link"><i class="bi bi-play-circle"></i>Actions</button>
         <button type="button" class="btn btn-link"><i class="bi bi-book-half"></i>Wiki</button>
@@ -105,6 +106,8 @@ a
   height 40px
   width 100%
   align-items center
+  .btn
+    color $text-color
   button
     display flex
     align-items center
@@ -206,5 +209,24 @@ a
   .p-badge
     right 0
 
-
+@media (min-width 1650px)
+ .container-main-up
+   padding-left 60px
+  .flex-dirrec
+    margin-left 0px
+    width 98%
+  .right-button
+    padding-right 40px
+  .three-js-text
+    font-weight 600
+    margin-right 10px
+  .right-main1
+    font-size 12px
+  .right-main1-bi
+    margin-right 8px
+  .main2
+    .btn
+      margin-right 15px
+      font-size 15px
+      font-weight 600
 </style>

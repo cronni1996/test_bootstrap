@@ -6,8 +6,7 @@ import "primevue/resources/themes/lara-light-indigo/theme.css"
 import "primevue/resources/primevue.min.css"
 import 'primeicons/primeicons.css'
 
-//reset.css
-import '../src/assets/style/Reset.css'
+
 
 import PrimeVue from 'primevue/config';
 import Avatar from 'primevue/avatar';
@@ -18,7 +17,8 @@ import InputSwitch from 'primevue/inputswitch';
 import SpeedDial from 'primevue/speeddial';
 import Toast from 'primevue/toast';
 
-
+//reset.css
+import '../src/assets/style/Reset.css'
 
 
 const app=createApp(App)

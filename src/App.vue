@@ -53,8 +53,7 @@ export default {
   width 100%
   display flex
   flex-direction row
-  .main-down-left-group
-    width 66%
+
 .main-down
   flex-direction column
   width 100%
@@ -65,8 +64,11 @@ export default {
   display flex
   flex-direction column
   width 80%
-  margin-left 70px
 
 
+@media (min-width: 1650px)
+  .main-down-left-group
+    padding-left 75px
+    margin-right 40px
 
 </style>

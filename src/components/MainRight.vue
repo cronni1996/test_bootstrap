@@ -6,7 +6,7 @@
         <h4 class="text-h4">JavaScript 3D Library</h4>
       </div>
       <div class="three">
-        <h4 class="text-three"><i class="bi bi-link"></i>three.js</h4>
+        <h4 class="text-three"><i class="bi bi-link"></i>threee.js</h4>
         <div class="three-line1">
           <h5> javascript</h5>
           <h5>svg</h5>
@@ -83,27 +83,13 @@ export default defineComponent({
 </script>
 
 <style lang="stylus" >
-$background-add-code = #e4eafa
-$text-color = #838383
-$badge-color = red
-$blue-color = #3360fd
-$background-color = #f6f7f8
-$icons-color = #b7c1d7
-$background-block = #fdfdfd
-$color-black = black
-$text-color-black = #3f547f
-$color-sd = #e42e7a
-$color-sg = #3360fd
-$color-fd = #3de5cc
-$color-mh1 = #29ca39
-$color-mh2 = #e42f2f
-$color-mh3 = #e4317c
-$color-kl = #ca7329
+@import "./color"
+
 
 .container-main-right
   display flex
   flex-direction column
-  width 450px
+  width 420px
   height auto
 .three-line1
   display flex
@@ -240,17 +226,21 @@ h4
   display flex
   flex-direction row
   margin-top 20px
-  margin-left 20px
+  margin-left 10px
+  align-items center
   .text-contributors
     font-family Roboto, Helvetica Neue Light, Helvetica Neue, Helvetica, Arial, Lucida Grande, sans-serif
-    font-size 16px
+    font-size 18px
     font-weight 900
     color $text-color-black
     margin-right 20px
   .int-contributors
     display flex
     align-items center
-    background-color none
+    background-color $background-block
+    color $text-color
+    border 2px solid $border-color
+    padding 5px 10px
 .p-avatar-text
   font-size 1rem
 .avatar-contributors
@@ -313,5 +303,30 @@ h4
     margin-bottom 20px
   .content
     margin-left 20px
-
+@media (min-width: 1650px)
+  .content
+    margin-left 10px
+    .text-h3
+      font-size 23px
+    .text-h4
+      font-size 18px
+    .text-three
+      font-size 18px
+      font-weight 700
+      margin-bottom: 20px
+     .three-line1 ,.three-line2, .three-line3
+       h5
+          margin 0px 10px 10px 0px
+          padding: 5px 15px 5px 15px;
+          font-size 12px
+          font-weight 800
+  .icons
+    h4 ,.stars,.watching,.forks
+      font-size 14px
+      margin-top 25px
+  .contributors
+    .avatar-contributors
+      .mr-2
+        margin-right 3px
+        margin-top 10px
 </style>

@@ -107,6 +107,14 @@ export default defineComponent({
         display flex
         flex-direction row
         align-content center
+.branches
+  .branches-h3-int
+    color $text-color-black
+    font-weight 600
+.tags
+  .tags-h3-int
+    color $text-color-black
+    font-weight 600
 .btn-go-to-file
   font-size 12px
   width 120px
@@ -119,5 +127,27 @@ export default defineComponent({
 .btn-secondary
   font-size 12px
   border none
-
+.top-left-up1
+  .dropdown
+    .btn
+      background-color $background-block
+      color $text-color-black
+      font-size 16px
+      font-weight 600
+      margin-right 30px
+      border 1px solid $border-color
+.top-left-up2
+  .btn-go-to-file
+    background-color $background-block
+    font-size 16px
+    font-weight 600
+    width 100px
+    padding 10px 20px 10px 20px
+    border 1px solid $border-color
+  .btn
+    font-size 14px
+    padding 10px 20px 10px 20px
+    border 1px solid $border-color
+  .btn-group
+    margin-right 0px
 </style>

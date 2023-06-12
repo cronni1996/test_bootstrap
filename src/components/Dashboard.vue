@@ -25,5 +25,7 @@ export default {
   align-items center
 .bi-dashboard
   font-size 16px
-
+.btn
+  padding-left 0px
+  margin-left  0px
 </style>

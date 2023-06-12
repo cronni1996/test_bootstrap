@@ -5,8 +5,11 @@
 </template>
 
 <script>
+import MainRight from "@/App.vue";
+
 export default {
-  name: "Customers"
+  name: "Customers",
+  components: {MainRight}
 }
 </script>
 
@@ -15,4 +18,8 @@ export default {
 .btn
   background-color $background-color
   @extend $text-navi
+
+.btn
+  padding-left 0px
+  margin-left  0px
 </style>

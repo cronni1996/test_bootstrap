@@ -109,7 +109,6 @@ export default ({
 .container-sidebar
   border-right $border-color 2px solid
   width 330px
-  height 1360px
   background-color $background-color
   display flex
   flex-direction column
@@ -120,6 +119,7 @@ export default ({
   margin-top 20px
   flex-direction row
   display: flex;
+  align-items center
 
   h1
     font-size 20px
@@ -164,7 +164,7 @@ export default ({
   margin-top 30px
   margin-left 10px
   width 260px
-  height 350px
+  height 270px
   background-color $background-block
   display flex
   flex-direction column
@@ -204,7 +204,7 @@ export default ({
   img
 
   button
-    margin-top 20px
+    margin-top 5px
     border none
     background-color $background-block
     width 200px
@@ -217,7 +217,7 @@ export default ({
   margin-left 13px
   margin-top 30px
   width 250px
-  height 300px
+  height 250px
   background-color $background-block
   display flex
   flex-direction column
@@ -241,19 +241,19 @@ export default ({
     color $blue-color
     text-decoration none
     font-family Roboto, Helvetica Neue Light, Helvetica Neue, Helvetica, Arial, Lucida Grande, sans-serif
-    font-size 19px
+    font-size 12px
     font-weight 600
 
   h3
-    margin-top 10px
+    margin-top 30px
     font-family Roboto, Helvetica Neue Light, Helvetica Neue, Helvetica, Arial, Lucida Grande, sans-serif
-    font-weight 900
-    font-size 25px
+    font-weight 600
+    font-size 16px
 
   h4
     font-family Roboto, Helvetica Neue Light, Helvetica Neue, Helvetica, Arial, Lucida Grande, sans-serif
     font-weight 600
-    font-size 19px
+    font-size 12px
     margin-top 7px
     margin-right 7px
 
@@ -460,7 +460,7 @@ export default ({
 
 @media (min-width 1650px)
   .container-sidebar
-    width 340px
+    width 400px
 
   .user-avatar
     margin 0 10px 0 20px
@@ -475,7 +475,7 @@ export default ({
   .form-check
     margin-left 60px
   .add-services
-    width 220px
+    width 250px
     .dropdown-toggle
        font-weight 600
        font-size 16px
@@ -489,7 +489,7 @@ export default ({
       margin-top 10px
       font-family Roboto, Helvetica Neue Light, Helvetica Neue, Helvetica, Arial, Lucida Grande, sans-serif
       font-weight 900
-      font-size 28px
+      font-size 22px
   .group
     button
       width 150px
@@ -499,4 +499,8 @@ export default ({
     font-size 19px
     margin-top 7px
     margin-right 7px
+.sidebar-navi
+  .bi
+    margin-right 30px
+
 </style>
