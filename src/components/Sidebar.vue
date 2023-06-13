@@ -1,8 +1,11 @@
-<!--suppress ALL -->
 <template>
+<!--  Блок sidebar-->
   <div class="container-sidebar">
+
+<!--    Блок Пользователь-->
     <div class="users">
       <div class="user-avatar">
+        <!-- Компонент Avatar с меткой "MH" -->
         <Avatar label="MH" class="mr-2 mr-2-sidebar" size="large" shape="circle"
                 style="font-size:17px; font-family: Roboto, Helvetica Neue Light, Helvetica Neue, Helvetica, Arial, Lucida Grande, sans-serif;font-weight:900;"/>
       </div>
@@ -10,23 +13,37 @@
         <h2 class="good-day">Good Day</h2>
         <h1 class="user-name">Michail D.</h1>
       </div>
+<!--      Иконки настройки пользователя -->
       <div class="user-icons">
         <i class="bi bi-person"></i>
         <i class="bi bi-gear"></i>
       </div>
     </div>
+    <!-- Навигация sidebar -->
     <div class="sidebar-navi">
       <div class="btn-group-vertical" role="group" aria-label="Vertical button group">
+
+        <!-- Компонент Dashboard -->
         <Dashboard/>
+
+        <!-- Компонент Project -->
         <Project/>
+
+        <!-- Компонент Calendars -->
         <Calendars/>
+        <!-- Компонент Mails -->
         <Mails/>
+        <!-- Компонент Notifications -->
         <Notifications/>
+        <!-- Компонент Sales -->
         <Sales/>
+        <!-- Компонент Applications -->
         <Applications/>
+        <!-- Компонент Customers -->
         <Customers/>
       </div>
     </div>
+    <!-- Блок сервисов -->
     <div class="services">
       <div class="add-services">
         <div class="add-servis">
@@ -44,14 +61,20 @@
           </div>
         </div>
         <div class="group">
+          <!-- Компонент Jira -->
           <Jira/>
+          <!-- Компонент Slack -->
           <Slack/>
+          <!-- Компонент Intercom -->
           <Intercom/>
+          <!-- Компонент Messenger -->
           <Messenger/>
+          <!-- Компонент AddNewPlugin -->
           <AddNewPlugin/>
         </div>
       </div>
     </div>
+    <!-- Блок добавления проекта -->
     <div class="add-project">
       <div class="button-add">
         <button type="button" class="btn btn-primary bi bi-plus-circle">
@@ -67,6 +90,7 @@
 </template>
 
 <script>
+// Импортирование компонентов
 import Dashboard from "@/components/Dashboard.vue";
 import Project from "@/components/Project.vue";
 import Mails from "@/components/Mails.vue";
@@ -80,7 +104,7 @@ import Slack from "@/components/Slack.vue";
 import Intercom from "@/components/Intercom.vue";
 import Messenger from "@/components/Messenger.vue";
 import AddNewPlugin from "@/components/AddNewPlugin.vue";
-
+// Подключение для работы с ними
 export default ({
   components: {
     Customers,
@@ -105,7 +129,7 @@ export default ({
 <style lang="stylus" >
 @import "./color"
 
-
+//Стили контйнера
 .container-sidebar
   border-right $border-color 2px solid
   width 330px
@@ -335,7 +359,7 @@ export default ({
   margin-top 5px
 
 .mr-2-sidebar
-  margin 10px 0px 0px 0px
+  margin 10px 0 0 0
 
 .users
   .user
@@ -431,7 +455,7 @@ export default ({
     margin-left -35px
 
   .mr-2-sidebar
-    margin 10px 0px 0px 0px
+    margin 10px 0 0 0
 
   .users
     .user

@@ -17,6 +17,6 @@ export default {
   @extend $text-navi
 
 .btn
-  padding-left 0px
-  margin-left  0px
+  padding-left 0
+  margin-left  0
 </style>

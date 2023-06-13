@@ -1,4 +1,5 @@
 <template>
+<!--  Контейнер Интерком -->
   <div class="intercom">
     <img src="../img/intercom.png"/>
     <!-- Default dropend button -->

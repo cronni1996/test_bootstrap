@@ -4,6 +4,7 @@
       <div class="main1">
         <div class="left">
           <div class="breadcrumb">
+            <!-- Компонент иконки для хлебных крошек -->
             <i class="bi bi-journal-bookmark"></i>
           </div>
           <div class="public-bitton">
@@ -22,9 +23,11 @@
           <button type="button" class="right-main1 btn btn-light"><i class="right-main1-bi bi bi-bell"></i>
             Notifications
           </button>
+          <!-- Компонент значка и значение бейджа -->
           <button type="button" class="right-main1 btn btn-light"><i class="right-main1-bi bi bi-briefcase"></i> Fork
             <Badge class="badge-main1" value="32k" style="background-color: #f3f5f8; color:black"></Badge>
           </button>
+          <!-- Компонент значка и значение бейджа -->
           <button type="button" class="right-main1 btn btn-light"><i class="right-main1-bi bi bi-star"></i> Star
             <Badge class="badge-main1" value="77k" style="background-color: #f3f5f8; color:black"></Badge>
           </button>
@@ -62,8 +65,7 @@ export default defineComponent({
 </script>
 
 <style lang="stylus" scoped>
-@import  "./color"
-
+@import "./color"
 
 
 .container-main-up
@@ -73,20 +75,25 @@ export default defineComponent({
   height 138px
   flex-grow 1
   max-width: 100%
+
 .flex-dirrec
   display flex
   flex-direction column
   width 94%
+
 .badge-main1
   margin-left 10px
   display flex
   flex-direction row
+
 a
   text-decoration none
+
 .left
   display flex
   flex-grow 1
   heigt 100px
+
 .main1
   margin-left 80px
   margin-right 10px
@@ -95,8 +102,10 @@ a
   flex-direction row
   height 40px
   width 100%
+
 .btn
   text-decoration none
+
 .main2
   margin-left 85px
   margin-right 10px
@@ -106,46 +115,57 @@ a
   height 40px
   width 100%
   align-items center
+
   .btn
     color $text-color
+
   button
     display flex
     align-items center
+
   i
     font-size 20px
     margin-right 15px
+
   .bi-code-main2
     border-bottom: solid;
     border-radius: 0;
     color $blue-color
+
   .bi-code-main22
     color $blue-color
     margin-left -20px
+
   .badge-pull-request
     margin-left 10px
     background-color $background-block
     color $color-black
+
 .right-button
   display flex
   justify-content flex-end
+
 .breadcrumb-item
   margin-left 10px
   color $blue-color
   font-family Roboto, Helvetica Neue Light, Helvetica Neue, Helvetica, Arial, Lucida Grande, sans-serif
   font-size 30px
   text-decoration: none
+
 .button-public
   margin-left 20px
   border-radius 20px
   font-size 15px
   margin-top 7px
   background-color $background-block
+
 .right-main1
   margin-left 20px
   display flex
   align-items center
   background-color $background-block
   border-radius 10px
+
 .right-main1-bi
   font-size 15px
   margin-right 15px
@@ -154,28 +174,38 @@ a
 @media (max-width: 1200px) and (min-width: 1000px)
   .container-main-up
     width 100%
+
   .breadcrumb-item
     margin-top 10px
     font-size 17px
+
   .button-public
     font-size 11px
     margin-right 5px
+
   .bi-journal-bookmark
     margin-top 10px
+
   .right-main1
     font-size 10px
     margin-left 5px
+
   .right-main1-bi
     font-size 10px
+
   .badge-main1
     font-size 8px
+
   .main1, .main2
     margin-left 20px
+
   .main2
     i
       font-size 14px
+
     button
       font-size 12px
+
   .p-badge
     right 0
 
@@ -183,47 +213,63 @@ a
   .container-main-up
     width 100%
     padding-left 30px
+
   .breadcrumb-item
     margin-top 10px
     font-size 20px
+
   .button-public
     font-size 12px
     margin-right 5px
+
   .bi-journal-bookmark
     margin-top 10px
     font-size 20px
+
   .right-main1
     font-size 15px
     margin-left 5px
+
   .right-main1-bi
     font-size 15px
+
   .badge-main1
     font-size 13px
+
   .main1, .main2
     margin-left 20px
+
   .main2
     i
       font-size 14px
+
     button
       font-size 14px
+
   .p-badge
     right 0
 
 @media (min-width 1650px)
- .container-main-up
-   padding-left 60px
+  .container-main-up
+    padding-left 60px
+
   .flex-dirrec
-    margin-left 0px
+    margin-left 0
     width 98%
+
   .right-button
     padding-right 40px
+
   .three-js-text
     font-weight 600
     margin-right 10px
+
   .right-main1
     font-size 12px
+
   .right-main1-bi
     margin-right 8px
+
   .main2
     .btn
       margin-right 15px

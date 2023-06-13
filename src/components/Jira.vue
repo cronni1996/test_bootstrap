@@ -1,4 +1,5 @@
 <template>
+<!--  Контейнер Jira-->
   <div class="jira">
     <img src="../img/jira.png"/>
     <!-- Default dropend button -->
